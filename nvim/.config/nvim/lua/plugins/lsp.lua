@@ -4,7 +4,7 @@ return {
     opts = {
       servers = {
         -- Python
-        ruff_lsp = {
+        pyright = {
           handlers = {
             ["textDocument/publishDiagnostics"] = function() end,
           },
