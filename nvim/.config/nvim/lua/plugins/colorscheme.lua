@@ -1,24 +1,25 @@
--- return {
---   "folke/tokyonight.nvim",
---   opts = {
---     transparent = true,
---     styles = {
---       sidebars = "transparent",
---       floats = "transparent",
---     },
---   },
--- }
 return {
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
+    config = function()
+      require("onedarkpro").setup({
+        styles = {
+          comments = "italic",
+          keywords = "bold",
+          functions = "italic",
+          variables = "italic",
+        },
+        options = {
+          transparency = true,
+        },
+      })
+    end,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-  {
-    "catppuccin",
-    opts = {
-      transparent_background = true,
+      colorscheme = "onedark_dark",
     },
   },
 }
