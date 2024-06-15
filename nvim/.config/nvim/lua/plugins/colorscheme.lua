@@ -5,10 +5,11 @@ return {
     config = function()
       require("onedarkpro").setup({
         styles = {
+          types = "italic, bold",
+          methods = "italic",
           comments = "italic",
           keywords = "bold",
           functions = "italic",
-          variables = "italic",
         },
         options = {
           transparency = true,
