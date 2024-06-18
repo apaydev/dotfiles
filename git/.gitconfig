@@ -1,0 +1,13 @@
+[user]
+    name = Arturo Avila
+    email = mysticmetromx@gmail.com
+
+[includeIf "gitdir:~/documents/development/work/"]
+    path = .gitconfig-work
+
+[init]
+    defaultBranch = main
+[alias]
+	adog = log --all --decorate --oneline --graph
+	adogs = log --all --decorate --oneline --graph --stat
+

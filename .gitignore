@@ -1,1 +1,3 @@
 tmux/.config/tmux/plugins/*
+ssh/.ssh/id_ed25519*
+ssh/.ssh/known_hosts*
