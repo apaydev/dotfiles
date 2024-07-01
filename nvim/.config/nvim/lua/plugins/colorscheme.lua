@@ -11,6 +11,9 @@ return {
           keywords = "bold",
           functions = "italic",
         },
+        colors = {
+          gray = "#6b6b6b",
+        },
         options = {
           transparency = true,
         },
