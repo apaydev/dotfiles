@@ -36,7 +36,8 @@ fetch_status = true
 
 # Execution time and language info block.
 [[blocks]]
-type = 'rprompt'
+alignment = 'right'
+type = 'prompt'
 
 # Node.
 [[blocks.segments]]
