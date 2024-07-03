@@ -38,17 +38,6 @@ fetch_status = true
 [[blocks]]
 type = 'rprompt'
 
-# Execution time segment.
-[[blocks.segments]]
-type = 'executiontime'
-style = 'plain'
-foreground = 'yellow'
-background = 'transparent'
-template = '{{ .FormattedMs }}'
-
-[blocks.segments.properties]
-threshold = 5000
-
 # Node.
 [[blocks.segments]]
 type = 'node'
@@ -74,11 +63,22 @@ type = 'python'
 style = 'plain'
 foreground = 'p:yellow'
 background = 'transparent'
-template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}'
+template = '  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}'
 
 [blocks.segments.properties]
 display_mode = 'files'
 fetch_version = false
+
+# Execution time segment.
+[[blocks.segments]]
+type = 'executiontime'
+style = 'plain'
+foreground = 'yellow'
+background = 'transparent'
+template = '{{ .FormattedMs }}'
+
+[blocks.segments.properties]
+threshold = 5000
 
 # Block for the user input.
 [[blocks]]
