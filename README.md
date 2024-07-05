@@ -5,6 +5,7 @@ My personal dotfiles for my daily workflow as a developer.
 ## Requirements
 
 - cURL and wget: For downloading files from the internet.
+- [bat](https://github.com/sharkdp/bat): A cat clone with syntax highlighting and Git integration.
 - [Git](https://git-scm.com/): For repository-cloning related tasks.
 - [A Nerd Font](https://www.nerdfonts.com/): For the icons in the status bar. I use [Victor Mono](https://rubjo.github.io/victor-mono/).
 - [Alacritty](https://alacritty.org): My preferred terminal emulator.
