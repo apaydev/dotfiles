@@ -4,9 +4,9 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
       -- Disables the window from popping up automatically when inserting text.
-      opts.completion = vim.tbl_extend("force", opts.completion, {
-        autocomplete = false,
-      })
+      -- opts.completion = vim.tbl_extend("force", opts.completion, {
+      --   autocomplete = false,
+      -- })
       -- Allows to show the window with snippets and suggestions.
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<A-c>"] = cmp.mapping.complete(),
