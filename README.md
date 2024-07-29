@@ -16,6 +16,7 @@ My personal dotfiles for my daily workflow as a developer.
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm): Extend the functionality of Tmux.
 - [Neovim](https://neovim.io/): A hyperextensible Vim-based text editor.
 - [LazyVim](https://www.lazyvim.org): Neovim setup powered by lazy.nvim with sensible defaults.
+- [typescript-tools](https://github.com/pmizio/typescript-tools.nvim?tab=readme-ov-file#-styled-components-support): Drop in, pure lua replacement for `typescript-language-server` with [styled-components](https://styled-components.com) support.
 - [GNU Stow](https://www.gnu.org/software/stow/): For managing symlinks to the dotfiles.
 - A C compiler and libstdc++ installed in your system.
 
