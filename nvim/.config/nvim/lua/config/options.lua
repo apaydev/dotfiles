@@ -4,4 +4,4 @@
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.colorcolumn = { 80, 100 }
+-- vim.opt.colorcolumn = { 80, 100 }

@@ -21,11 +21,22 @@ return {
   --   end,
   -- },
   -- {
-  { "folke/tokyonight.nvim", lazy = true, opts = { style = "moon" } },
+  -- { "folke/tokyonight.nvim", lazy = true, opts = { style = "moon" } },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = "true",
+    config = function()
+      require("catppuccin").setup({
+        flavour = "mocha",
+        transparent_background = true,
+      })
+    end,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin",
     },
   },
 }
