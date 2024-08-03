@@ -19,6 +19,21 @@ return {
           break
         end
       end
+      -- Window transparency.
+      opts.window = {
+        completion = {
+          border = "rounded",
+          -- Removes the background color of the window.
+          winhighlight = "Normal:MyHighlight",
+          winblend = 0,
+        },
+        documentation = {
+          border = "rounded",
+          -- Removes the background color of the window.
+          winhighlight = "Normal:MyHighlight",
+          winblend = 0,
+        },
+      }
     end,
   },
 }
