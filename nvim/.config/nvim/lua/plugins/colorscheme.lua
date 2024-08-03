@@ -30,6 +30,21 @@ return {
       require("catppuccin").setup({
         flavour = "mocha",
         transparent_background = true,
+        styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+          comments = { "italic" }, -- Change the style of comments
+          conditionals = {},
+          loops = {},
+          functions = {},
+          keywords = {},
+          strings = {},
+          variables = {},
+          numbers = {},
+          booleans = {},
+          properties = {},
+          types = { "italic", "bold" },
+          operators = {},
+          -- miscs = {}, -- Uncomment to turn off hard-coded styles
+        },
       })
     end,
   },
