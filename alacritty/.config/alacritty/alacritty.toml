@@ -19,6 +19,7 @@ family = "VictorMono Nerd Font"
 style = "Bold Italic"
 
 [window]
+opacity = 0.8
 [window.padding]
 x = 5
 y = 5
