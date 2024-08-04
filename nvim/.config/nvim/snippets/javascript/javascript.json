@@ -1,0 +1,13 @@
+{
+  "Export Statements for React": {
+    "prefix": "esr",
+    "body": [
+      "export * from \"./${TM_FILENAME_BASE}\";",
+      "export { default } from \"./${TM_FILENAME_BASE}\";"
+    ]
+  },
+  "ESlint Vars/Props": {
+    "prefix": "esvp",
+    "body": ["\"no-unused-vars\": \"warn\",", "\"react/prop-types\": \"off\""]
+  }
+}
