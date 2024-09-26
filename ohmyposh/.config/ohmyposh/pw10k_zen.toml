@@ -67,7 +67,7 @@ background = 'transparent'
 template = '  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}'
 
 [blocks.segments.properties]
-display_mode = 'files'
+display_mode = 'context'
 fetch_version = false
 
 # Execution time segment.
