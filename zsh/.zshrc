@@ -84,3 +84,6 @@ esac
 
 # Turso
 export PATH="/home/aavila/.turso:$PATH"
+
+# Pipenv completitions
+eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
