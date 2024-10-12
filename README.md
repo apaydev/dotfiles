@@ -4,6 +4,8 @@ My personal dotfiles for my daily workflow as a developer.
 
 ## Requirements
 
+### TODO: Divide all of this into sections and add missing links
+
 - cURL and wget: For downloading files from the internet.
 - [bat](https://github.com/sharkdp/bat): A cat clone with syntax highlighting and Git integration.
 - [Git](https://git-scm.com/): For repository-cloning related tasks.
@@ -19,6 +21,7 @@ My personal dotfiles for my daily workflow as a developer.
 - [typescript-tools](https://github.com/pmizio/typescript-tools.nvim?tab=readme-ov-file#-styled-components-support): Drop in, pure lua replacement for `typescript-language-server` with [styled-components](https://styled-components.com) support.
 - [GNU Stow](https://www.gnu.org/software/stow/): For managing symlinks to the dotfiles.
 - A C compiler and libstdc++ installed in your system.
+- hyprland, swaync, qt5-wayland, qt6-wayland, waybar, hyprpaper, xdg-desktop-portal-hyprland, hyprpicker, hyperidle, hyprlock, clipse, evdi, displaylink.
 
 ## How to use
 
