@@ -65,7 +65,20 @@ window#waybar.hidden {
   padding: 0px 10px;
 }
 
-#network {
+#clock {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition: none;
+  color: #ffffff;
+  background: #161320;
+  /*background: #1A1826;*/
+}
+
+#custom-updates {
   margin-top: 6px;
   margin-left: 8px;
   padding-left: 10px;
@@ -74,7 +87,7 @@ window#waybar.hidden {
   border-radius: 10px;
   transition: none;
   color: #161320;
-  background: #bd93f9;
+  background: #e8a2af;
 }
 
 #pulseaudio {
@@ -87,6 +100,18 @@ window#waybar.hidden {
   transition: none;
   color: #1a1826;
   background: #fae3b0;
+}
+
+#network {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition: none;
+  color: #161320;
+  background: #bd93f9;
 }
 
 #battery {
@@ -124,84 +149,13 @@ window#waybar.hidden {
   }
 }
 
-#backlight {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #f8bd96;
-}
-#clock {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #ffffff;
-  background: #161320;
-  /*background: #1A1826;*/
-}
-
-#memory {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 0px;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #ddb6f2;
-}
-#cpu {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 0px;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #96cdfb;
-}
-
-#tray {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 0px;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: none;
-  color: #b5e8e0;
-  background: #161320;
-}
-
-#custom-launcher {
-  font-size: 24px;
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 5px;
-  border-radius: 10px;
-  transition: none;
-  color: #89dceb;
-  background: #161320;
-}
-
 #custom-power {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 6px;
   margin-left: 8px;
   margin-right: 8px;
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 15px;
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
@@ -209,7 +163,9 @@ window#waybar.hidden {
   background: #f28fad;
 }
 
-#custom-wallpaper {
+#custom-reboot,
+#custom-lock,
+#custom-quit {
   margin-top: 6px;
   margin-left: 8px;
   padding-left: 10px;
@@ -218,29 +174,17 @@ window#waybar.hidden {
   border-radius: 10px;
   transition: none;
   color: #161320;
-  background: #c9cbff;
+  font-size: 20px;
 }
 
-#custom-updates {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #e8a2af;
+#custom-reboot {
+  background: #fdf8cb;
 }
 
-#custom-media {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #f2cdcd;
+#custom-lock {
+  background: #9fa7f9;
+}
+
+#custom-quit {
+  background: #f9dd9f;
 }

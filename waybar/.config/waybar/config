@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["hyprland/workspaces", "hyprland/language", "keyboard-state"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/updates", "pulseaudio", "battery","custom/power"],
+	"modules-right": ["custom/updates", "pulseaudio", "network", "battery", "group/group-power"],
 	
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -34,16 +34,16 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 3600,
-        // "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
-        "on-click": "yay; notify-send 'The system has been updated'",
+        "on-click": "alacritty -e yay; notify-send 'The system has been updated'",
         "tooltip": false
     },
 
-	"pulseaudio": {
+    "pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
         "max-volume": 100,
 		"format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
 		"format-muted": "{icon} {volume}%",
 		"on-click":"wpctl set-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
@@ -52,12 +52,14 @@
 		}
 	},
 
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
+    "network": {
+        "tooltip": false,
+        "format": "{ifname}",
+        "format-wifi": "{essid}  ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰈀 ",
+        "format-disconnected": "" //An empty format will hide the module.
 	},
-
+		
 	"battery": {
         "states": {
             "good": 95,
@@ -71,38 +73,39 @@
         "format-icons": ["", "", "", "", ""]
     },
 
-	"tray":{
-		"icon-size":18,
-		"spacing": 10
-	},
-
-    "cpu": {
-        "interval": 15,
-        "format": " {}%",
-        "max-length": 10
-    },
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "max-length": 10
-    },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
+    "group/group-power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false
         },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
+        "modules": [
+            "custom/power", // First element is the "group leader" and won't ever be hidden
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot"
+        ]
     },
-
-    "custom/power":{
-        "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+    "custom/quit": {
+        "format": "󰗼",
+        "tooltip-format": "Quit Hyprland",
+        "on-click": "hyprctl dispatch exit"
     },
+    "custom/lock": {
+        "format": "󰍁",
+        "tooltip-format": "Lock",
+        "on-click": "hyprlock"
+    },
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip-format": "Reboot",
+        "on-click": "reboot"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip-format": "Power off",
+        "on-click": "shutdown now"
+    }
     
 }
