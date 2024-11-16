@@ -37,7 +37,8 @@
             "updated": "󰂪"
         },
         "exec-if": "which waybar-module-pacman-updates",
-        "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 3600"
+        "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 3600",
+        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
     },
 
     "pulseaudio": {
