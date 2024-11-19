@@ -31,7 +31,7 @@ return {
     },
     {
       "<leader><delete>",
-      LazyVim.ui.bufremove,
+      "<cmd>lua Snacks.bufdelete()<cr>",
       desc = "Close current buffer",
     },
   },
