@@ -1,0 +1,21 @@
+# Font config
+font-size = 18
+font-family = VictorMono NF Medium
+font-family-bold = VictorMono NF Bold
+font-family-italic = VictorMono NF Italic
+font-family-bold-italic = VictorMono NF Bold Italic
+
+# Theme and background
+theme = Ayu Mirage
+background-opacity = 0.8
+background-blur-radius = 20
+
+# Cursor
+cursor-style = bar
+cursor-click-to-move = true
+link-url = true
+
+# Window
+window-padding-x = 5
+window-padding-y = 5
+window-inherit-working-directory = true
