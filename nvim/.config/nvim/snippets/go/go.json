@@ -1,0 +1,6 @@
+{
+  "Error handling pattern for golang": {
+    "prefix": "ierr",
+    "body": ["if err != nil {", "\t${1:return err}", "}"]
+  }
+}
