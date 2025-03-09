@@ -1,6 +1,6 @@
 [user]
     name = Arturo Avila
-    email = mysticmetromx@gmail.com
+    email = avilapriegoa@gmail.com
 
 [includeIf "gitdir:~/documents/development/work/"]
     path = .gitconfig-work
