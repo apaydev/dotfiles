@@ -13,3 +13,5 @@
 	adog = log --all --decorate --oneline --graph
 	adogs = log --all --decorate --oneline --graph --stat
 
+[core]
+	editor = nvim

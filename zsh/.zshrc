@@ -88,3 +88,10 @@ export PATH="/home/aavila/.turso:$PATH"
 
 # Pipenv completitions
 eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
+
+# bun completions
+[ -s "/home/aavila/.bun/_bun" ] && source "/home/aavila/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
